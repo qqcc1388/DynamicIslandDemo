@@ -1,13 +1,13 @@
 
 ## 灵动岛基本信息
 灵动岛（Dynamic Island）相关API，隶属于Live Activity Framework，出现在iOS16.1系统；Live Activities负责在iPhone锁屏（Lock Screen）和灵动岛（Dynamic Island）中显示应用程序的最新数据。这使得人们一眼就能看到实时信息,并可以进行一些简单交互。
-1、Live Activities 可以展示app的最新数据在 iPhone的 LockScreen 锁屏上 和 Dynamic Island 灵动岛上。
-2、Widget Extension组件，iOS 14 重磅推出的新功能，使得用户可以在主屏幕添加小组件，快速浏览 app 提供的重要信息
-3、使用Live Activities 功能需要依赖Widget Extension，你可以在原有WidgetExtension上添加或者新建一个。
-4、ActivityKit用于管理Live Activities的生命周期。（request、update、end）
-5、灵动岛，要求iOS16.1+系统，iPhone 14 Pro & iPhone 14 Pro Max机型；
-6、一个Live Activity可以激活长达8小时,除非App通过API或用户终止它，否则。超过此限制，系统将自动结束。当一个Live Activity结束时，系统立即将其从灵动岛（Dynamic Island）中删除。然而，Live Activity会一直保持在锁定屏幕上，直到用户删除它
-7、每个Live Activity运行在自己的沙盒里，不像widget，不能获取网络或接受位置更新；要更新活跃的Live Activity的动态数据，有两种方式：应用程序中使用ActivityKit框架；允许Live Activity接收远程推送通知
+1. Live Activities 可以展示app的最新数据在 iPhone的 LockScreen 锁屏上 和 Dynamic Island 灵动岛上。
+2. Widget Extension组件，iOS 14 重磅推出的新功能，使得用户可以在主屏幕添加小组件，快速浏览 app 提供的重要信息
+3. 使用Live Activities 功能需要依赖Widget Extension，你可以在原有WidgetExtension上添加或者新建一个。
+4. ActivityKit用于管理Live Activities的生命周期。（request、update、end）
+5. 灵动岛，要求iOS16.1+系统，iPhone 14 Pro & iPhone 14 Pro Max机型；
+6. 一个Live Activity可以激活长达8小时,除非App通过API或用户终止它，否则。超过此限制，系统将自动结束。当一个Live Activity结束时，系统立即将其从灵动岛（Dynamic Island）中删除。然而，Live Activity会一直保持在锁定屏幕上，直到用户删除它
+7. 每个Live Activity运行在自己的沙盒里，不像widget，不能获取网络或接受位置更新；要更新活跃的Live Activity的动态数据，有两种方式：应用程序中使用ActivityKit框架；允许Live Activity接收远程推送通知
 
 效果图预览
 <div style="text-align:left">
@@ -38,11 +38,11 @@ Live Activity大小
 | 393x852 | 52.33x36.67 | 52.33x36.67 | 36.67 | 371x84–160 | 371x160 |
 
 ## 创建并开启灵动岛
-1、需要至少Xcode 14.1 Beta版及iOS16.1才能使用ActivityKit 框架，iOS16.1是第一个开放ActivityKit的正式版本
-2、在主工程的info.plist中加入键值NSSupportsLiveActivities ，并将其布尔值设置为YES
-3、因为灵动岛是属于小组件的一部分，所以项目中如果没有小组件的话要先创建小组件。有小组件的话可以添加些代码即可适配。
+1. 需要至少Xcode 14.1 Beta版及iOS16.1才能使用ActivityKit 框架，iOS16.1是第一个开放ActivityKit的正式版本
+2. 在主工程的info.plist中加入键值NSSupportsLiveActivities ，并将其布尔值设置为YES
+3. 因为灵动岛是属于小组件的一部分，所以项目中如果没有小组件的话要先创建小组件。有小组件的话可以添加些代码即可适配。
 ![](https://img2022.cnblogs.com/blog/950551/202211/950551-20221114155209347-478132742.webp)
-4、创建Widget时勾选Include Live Activity会自动创建Activity相关代码
+4. 创建Widget时勾选Include Live Activity会自动创建Activity相关代码
  - 紧凑视图：分为leading和traling视图，只有一个live activity事件时
  - 最小视图：两个及以上live activity事件时，左右显示的都是minmal视图
  - 扩展视图：分为leading、traling、center、bottom
@@ -81,7 +81,7 @@ var body: some WidgetConfiguration {
         }
     }
 ```
-5、在主工程中创建开启、更新、关闭Activity相关代码
+5. 在主工程中创建开启、更新、关闭Activity相关代码
 ```
     /// 开启灵动岛显示功能
     func startActivity(){
@@ -123,7 +123,9 @@ var body: some WidgetConfiguration {
     }
 ```
 参考来源 ：
-> https://developer.apple.com/documentation/activitykit
-   https://github.com/1998code/iOS16-Live-Activities
-   https://www.jianshu.com/p/16dc66e0b6fe
-   https://juejin.cn/post/7160616320365494279
+>  https://developer.apple.com/documentation/activitykit
+>  https://github.com/1998code/iOS16-Live-Activities
+>  https://www.jianshu.com/p/16dc66e0b6fe
+>  https://juejin.cn/post/7160616320365494279
+
+github图片显示不全 请前往https://www.cnblogs.com/qqcc1388/p/16889243.html 博客园查看详情
