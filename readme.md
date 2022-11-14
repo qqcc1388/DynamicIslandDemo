@@ -12,8 +12,8 @@
 效果图预览
 <div style="text-align:left"> 
 <img src="https://img2022.cnblogs.com/blog/950551/202211/950551-20221114163227954-1755861202.png" width="32%" height="32%">  
-<img src="https://img2022.cnblogs.com/blog/950551/202211/950551-20221114163242777-1214475409.png" width="32%" height="32%">  
 <img src="https://img2022.cnblogs.com/blog/950551/202211/950551-20221114163236220-1260231560.png" width="32%" height="32%">  
+<img src="https://img2022.cnblogs.com/blog/950551/202211/950551-20221114163242777-1214475409.png" width="32%" height="32%">  
 </div>
 
 ## 灵动岛显示视图
