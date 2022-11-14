@@ -10,10 +10,10 @@
 7. 每个Live Activity运行在自己的沙盒里，不像widget，不能获取网络或接受位置更新；要更新活跃的Live Activity的动态数据，有两种方式：应用程序中使用ActivityKit框架；允许Live Activity接收远程推送通知
 
 效果图预览
-<div style="text-align:left">
-<img src="https://img2022.cnblogs.com/blog/950551/202211/950551-20221114155853434-1097231791.png" width="32%" height="32%">  
-<img src="https://img2022.cnblogs.com/blog/950551/202211/950551-20221114155911244-1045650924.png" width="32%" height="32%">  
-<img src="https://img2022.cnblogs.com/blog/950551/202211/950551-20221114155928218-2025294001.png" width="32%" height="32%">  
+<div style="text-align:left"> 
+<img src="https://img2022.cnblogs.com/blog/950551/202211/950551-20221114163227954-1755861202.png" width="32%" height="32%">  
+<img src="https://img2022.cnblogs.com/blog/950551/202211/950551-20221114163242777-1214475409.png" width="32%" height="32%">  
+<img src="https://img2022.cnblogs.com/blog/950551/202211/950551-20221114163236220-1260231560.png" width="32%" height="32%">  
 </div>
 
 ## 灵动岛显示视图
